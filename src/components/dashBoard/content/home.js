@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 const MenuDashBoard = () => {
   const toggleMenu = useSelector(state => state.menuStatus.menuStatus);
   return (
-      <Content desktop={toggleMenu ? "calc(100% - 240px)" : "calc(100% - 74px)"} mobileGrid = {toggleMenu ? '31.25%' : '12.5%'} wdscreen = { toggleMenu? '80%' : '2%'}>
+      <Content desktop={toggleMenu ? "calc(100% - 240px)" : "calc(100% - 75px)"} mobileGrid = {toggleMenu ? '31.25%' : '12.5%'} wdscreen = { toggleMenu? '80%' : '2%'}>
         <h1>Home</h1>
       </Content>
   );

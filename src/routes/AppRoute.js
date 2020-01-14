@@ -7,12 +7,13 @@ import PublicRoute from './PublicRoute';
 import Header from '../components/dashBoard/header/index';
 import Menu from '../components/dashBoard/menu/index';
 import Home from '../components/dashBoard/content/home';
-
+import SignIn from '../components/signPage/index';
 const AppRouter = () => (
     <BrowserRouter>
         <Grid>
         <PublicRoute component={Header} path="/" exact />
         <PublicRoute component={Menu} path="/" exact />  
+        <PublicRoute component={SignIn} path="/login" exact />  
         {/* //only here will change the route no page content (single page) */}
         <PublicRoute component={Home} path="/" exact />
         </Grid>     
