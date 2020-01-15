@@ -11,8 +11,8 @@ import SignIn from '../components/signPage/index';
 const AppRouter = () => (
     <BrowserRouter>
         <Grid>
-        <PublicRoute component={Header} path="/" exact />
         <PublicRoute component={Menu} path="/" exact />  
+        <PublicRoute component={Header} path="/" exact />  
         <PublicRoute component={SignIn} path="/login" exact />  
         {/* //only here will change the route no page content (single page) */}
         <PublicRoute component={Home} path="/" exact />

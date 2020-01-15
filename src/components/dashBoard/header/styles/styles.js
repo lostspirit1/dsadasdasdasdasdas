@@ -3,18 +3,24 @@ import { css } from 'styled-components';
 export const wrapStyle = css`
     height: 55px;
     max-height: 55px;
-    width:100%;  
+    width: calc(100% - 240px) !important;  
     background: #7578F9;
     padding: 0 !important;
 `;
 
 export const content = css`
-    width:240px;
-    height:100%;
-    background-color: #888bfc !important;
-    line-height: 52px;
-    padding: 1rem;
-    transition: all .3s;
+height:100%
+background: transparent;
+display: flex;
+align-items: center;
+color: #575962;
+padding: 6px 25px;
+width: 240px;
+font-size: 14px;
+cursor:pointer;
+font-weight: 400;
+position: relative;
+margin-bottom: 3px
 `;
 
 export const LogoImage = css`
@@ -35,4 +41,20 @@ export const barMenu = css`
     background: transparent !important;
     padding: 0 !important;
     margin: 0 !important;
+`;
+
+
+
+export const sideBarLogo = css`
+height:100%
+background: #fff;
+display: flex;
+align-items: center;
+color: #575962;
+padding: 6px 25px;
+font-size: 14px;
+cursor:pointer;
+font-weight: 400;
+position: relative;
+margin-bottom: 3px
 `;

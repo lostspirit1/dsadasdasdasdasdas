@@ -1,7 +1,7 @@
 import React from 'react';
 import { Content  } from './styles/index';
 import { useSelector } from "react-redux";
-
+import Header from '../header/index';
 const MenuDashBoard = () => {
   const toggleMenu = useSelector(state => state.menuStatus.menuStatus);
   return (

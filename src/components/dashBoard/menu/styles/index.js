@@ -1,6 +1,6 @@
 import { Grid } from "semantic-ui-react";
 import styled from "styled-components";
-import { gridMenuCss} from "./styles";
+import { gridMenuCss, sidebarNav,sidebarUl, sidebarLi,sidebar_a, logoItem, logoContent} from "./styles";
 
 export const GridMenu = styled(Grid.Column)`
   ${gridMenuCss}
@@ -15,4 +15,24 @@ export const GridMenu = styled(Grid.Column)`
   }
   @media only screen and (min-width: 1200px) and (max-width: 1919px) {
     width: ${props => props.desktop} !important;
+`;
+
+export const SidebarNav = styled.nav`
+    ${sidebarNav}
+`;
+export const SidebarUl = styled.ul`
+    ${sidebarUl}
+`;
+export const SideBarLi = styled.li`
+    ${sidebarLi}
+`;
+export const SideBarA = styled.a`
+    ${sidebar_a}
+`;
+
+export const LogoContent = styled.li`
+    ${logoContent}
+`;
+export const LogoItem = styled.a`
+    ${logoItem}
 `;

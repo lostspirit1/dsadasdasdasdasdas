@@ -2,8 +2,8 @@
 import { css } from 'styled-components';
 
 export const gridContent = css`
-position: relative;
-background: transparent !important;
+position: static !important;
+background: #eee !important;
 padding: 1rem !important;
-height: 100vh;
+height: calc(100vh - 55px) !important;
 transition: width 0.3s;`;

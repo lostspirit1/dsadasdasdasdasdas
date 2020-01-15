@@ -10,7 +10,6 @@ const Header = () => {
     <Wrap>
         <Content>
           <ContentItem>
-            <Logo src = { logo } />  
             <BarButton onClick={(id) => (dispatch({type: 'TOGGLE_MENU'}))}> 
             <Icon name='bars' size='large' style={{ margin: 0, padding: 0, opacity:'1', height:' 1em'}} /> 
             </BarButton>  
